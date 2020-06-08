@@ -495,10 +495,22 @@ li {}
 {
 	background-color: #689CAC;
 }
-.listCOntainerPeopleSearch li:hover {
-    background: #3f4752;
-    color: #fff;
-    cursor: pointer;
+
+.chatMessages ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #fff;
+}
+
+.chatMessages ul::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #fff;
+}
+
+.chatMessages ul::-webkit-scrollbar-thumb
+{
+	background-color: #689CAC;
 }
 .messageScreen .container {
     max-width: 80%;
@@ -641,3 +653,96 @@ button#emoji-picker svg {
     /* color: red; */
     filter: invert(1);
 }	
+.test-emoji {
+    text-align: left;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.test-emoji:focus {
+    border: none;
+    outline: none;
+}
+
+.containerMessageSend {
+    padding: 20px 20px;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.attachFile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attachFile label {
+    margin: 0px;
+}
+.chatMessages ul {
+    list-style: none;
+}
+
+.chatMessages li {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    max-width: 80%;
+    position: relative;
+    margin: 40px 0px;
+}
+
+.timeOfSendingtheMessage {
+    position: absolute;
+    bottom: 0;
+}
+
+.itsYou p {
+    background: #fff;
+    border: 2px solid #689CAC;
+    /* max-width: 400px; */
+    font-size: 13px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ImagecontainerSender img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.ImagecontainerSender {
+    margin-right: 30px;
+}
+
+li.itsMe {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+
+li.itsMe p {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+li.itsMe span {
+    left: 6px;
+    bottom: -7px;
+    font-size: 13px;
+}
+
+li.itsYou span {
+    right: 6px;
+    bottom: -7px;
+    font-size: 13px;
+}
+
+.listCOntainerPeopleSearch ul {
+    height: 70vh;
+}
+li.itsMe p {
+    font-size: 13px;
+}
