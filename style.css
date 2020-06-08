@@ -746,3 +746,100 @@ li.itsYou span {
 li.itsMe p {
     font-size: 13px;
 }
+.Plusewmessage {
+    width: 20px;
+    height: 20px;
+    background: #689cac;
+    border-radius: 50%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    line-height: 13px;
+    text-align: center;
+    border: 2px solid #689cac;
+}
+
+.Plusewmessage:hover {
+    background: none;
+    color: #689cac;
+    cursor: pointer;
+}
+.dropDownChat {
+    position: absolute;
+    right: -12px;
+    list-style: none;
+    background: #ffff;
+    box-shadow: 0px 0px 24px -6px #cccc;
+    min-width: 200px;
+    top: 46px;
+    z-index: 99;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropDownChat ul {
+    list-style: none;
+    /* background: #ffff; */
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.dropDownChat li {
+    /* padding: 10px; */
+}
+
+.dropDownChat li:last-child a {
+    /* padding-bottom: 0px; */
+}
+
+.dropDownChat a {
+    text-transform: capitalize;
+    color: #689cac;
+    font-size: 13px;
+    /* text-transform: capitalize; */
+    display: block;
+    padding: 10px;
+}
+
+.dropDownChat a:hover {
+    color: #ffff;
+    background: #3f4752;
+    text-decoration: none;
+}
+.dropDownChat,.deLchat span::before{ 
+    transition: 0.4s all;
+}
+.deLchat.active .dropDownChat {
+    visibility: visible;
+    opacity: 1;
+}
+
+.deLchat.active span::before {
+    transform: rotate(225deg);
+    margin-top: 7px;
+}
+.messageScreen .container {
+    max-width: 1620px;
+    padding: 0px 20px;
+}
+.headerMessageContetn h4 {
+    font-size: 13px;
+}
+.listCOntainerPeopleSearch li {
+    cursor: pointer;
+}
+.itsYou p,
+li.itsMe p,
+.containerCOntentListItem p
+{
+    font-size: 12px;
+}
+.chatMessages ul {
+    padding-bottom: 60px;
+}
+.timeOfChat {
+    font-size: 11px;
+}

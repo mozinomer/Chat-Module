@@ -309,12 +309,28 @@
 			<div class="col-md-8">
 				<div class="Chat">
 					<div class="headerChat">
-						<h2>
+						<h2 class="active">
 							<span class="onlineMember"></span>
 							whatever you call yourself
 						</h2>
 						<div class="deLchat">
 							<span class="chatDel"></span>
+							<div class="dropDownChat">
+								<ul>
+									<li>
+										<a href="#"> Delete Chat</a>
+									</li>
+									<li>
+										<a href="#">Visit Profile</a>
+									</li>
+									<li>
+										<a href="#">Add to favourite</a>
+									</li>
+									<li>
+										<a href="#">archive chat</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="chatMessages">
@@ -427,7 +443,6 @@
 		</div>
 	</div>
 </div>
-
 </body>
 <script type="text/javascript">
       // $(function() {
@@ -462,5 +477,9 @@
 		      $(".intercom-emoji-picker-emoji").show();
 		    }
 		});
+		$(".deLchat").click( function(e) {
+		    $(this).toggleClass("active")
+		})
 </script>
 </html>
+
