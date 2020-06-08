@@ -852,3 +852,63 @@ span.chatDel {
     align-items: center;
     justify-content: center;
 }
+.ImagesContainer li {
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+}
+
+.ImagesContainer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 10px 20px;
+}
+
+.ImagesContainer img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.ImagesContainer li span {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    color: red;
+    font-weight: 700;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 9px;
+}
+
+.ImagesContainer li span:hover {
+    background: red;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.ImagesContainer {
+    position: absolute;
+    top: 150%;
+    background: #f4f4f4;
+    left: 0;
+    right: 0;
+    transition: 0.4s all;
+}
+.ImagesContainer.active {
+    top: -121%;
+    transition: 0.4s all;
+}
+.messageScreen .container {
+    overflow: hidden;
+}
