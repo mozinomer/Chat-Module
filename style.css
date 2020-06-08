@@ -548,7 +548,10 @@ li {}
     position: relative;
 }
 
-.deLchat span::before {content: "";display: block;width: 12px;height: 12px;border: 2px solid #3f4752;transform: rotate(45deg);border-left: 0;border-top: 0;cursor: pointer;margin: auto;}
+.deLchat span::before {
+    content: "";display: block;width: 12px;height: 12px;border: 2px solid #3f4752;transform: rotate(45deg);border-left: 0;border-top: 0;cursor: pointer;margin: auto;
+    display: none
+}
 
 .chatDel {
     width: 20px;
@@ -767,17 +770,18 @@ li.itsMe p {
 }
 .dropDownChat {
     position: absolute;
-    right: -12px;
+    right: 0;
     list-style: none;
     background: #ffff;
     box-shadow: 0px 0px 24px -6px #cccc;
     min-width: 200px;
-    top: 46px;
+    top: 26px;
     z-index: 99;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     visibility: hidden;
     opacity: 0;
+    border-radius: 10px;
 }
 
 .dropDownChat ul {
@@ -842,4 +846,9 @@ li.itsMe p,
 }
 .timeOfChat {
     font-size: 11px;
+}
+span.chatDel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
