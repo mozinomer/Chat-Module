@@ -912,3 +912,54 @@ span.chatDel {
 .messageScreen .container {
     overflow: hidden;
 }
+div#messagePopup .modal-header {
+    border: none;
+}
+
+div#messagePopup h5 {
+    font-weight: 400;
+}
+
+div#messagePopup input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+div#messagePopup input[type="file"] {
+    display: none;
+}
+
+div#messagePopup textarea {
+    display: block;
+    width: 100%;
+    height: 240px;
+    padding: 10px;
+}
+
+.attachPopup label {
+    margin: 0;
+    border: 1px solid #689CAC;
+    color: #689CAC;
+    padding: 10px 16px;
+    margin: 20px 0px 0px;
+}
+div#messagePopup .modal-footer button {
+    background: #378CE8;
+    border-radius: 0px;
+    font-size: 14px;
+    padding: 11px 40px;
+}
+
+div#messagePopup .modal-footer {
+    border: none;
+}
+
+div#messagePopup input, div#messagePopup textarea {
+    border: 1px solid #D8D8D8;
+}
+
+div#messagePopup input::placeholder, div#messagePopup textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
